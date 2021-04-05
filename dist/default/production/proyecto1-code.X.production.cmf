@@ -1,0 +1,261 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/proyecto1.o
+resVect CODE 0 0 0 74 2
+udata_shr COMMON 1 70 70 D 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 74-1FFF 2
+ENTRY 74-1FFF 2
+IDLOC 2000-2003 2
+CODE 74-1FFF 2
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7F 1
+EEDATA 2100-21FF 2
+STRCODE 74-1FFF 2
+STRING 74-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/proyecto1.o
+0 resVect CODE >51:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+0 resVect CODE >52:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1 resVect CODE >54:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4 resVect CODE >56:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4 resVect CODE >57:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5 resVect CODE >58:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6 resVect CODE >59:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+7 resVect CODE >62:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+8 resVect CODE >63:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+9 resVect CODE >65:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+9 resVect CODE >66:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+A resVect CODE >67:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+B resVect CODE >68:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+C resVect CODE >69:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+D resVect CODE >71:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+E resVect CODE >73:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+E resVect CODE >75:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+F resVect CODE >76:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+10 resVect CODE >77:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+11 resVect CODE >78:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+12 resVect CODE >79:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+13 resVect CODE >80:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+14 resVect CODE >81:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+15 resVect CODE >82:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+16 resVect CODE >83:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+17 resVect CODE >84:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+18 resVect CODE >85:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+19 resVect CODE >86:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1A resVect CODE >87:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1B resVect CODE >88:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1C resVect CODE >89:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1D resVect CODE >90:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1E resVect CODE >91:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1F resVect CODE >93:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+1F resVect CODE >94:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+20 resVect CODE >96:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+21 resVect CODE >97:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+22 resVect CODE >98:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+23 resVect CODE >99:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+24 resVect CODE >101:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+25 resVect CODE >102:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+26 resVect CODE >103:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+27 resVect CODE >104:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+28 resVect CODE >106:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+28 resVect CODE >107:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+29 resVect CODE >108:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2A resVect CODE >109:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2B resVect CODE >110:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2C resVect CODE >111:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2D resVect CODE >112:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2D resVect CODE >114:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2E resVect CODE >115:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+2F resVect CODE >117:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+30 resVect CODE >118:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+31 resVect CODE >120:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+32 resVect CODE >121:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+33 resVect CODE >123:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+34 resVect CODE >124:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+35 resVect CODE >125:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+36 resVect CODE >126:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+37 resVect CODE >128:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+38 resVect CODE >129:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+39 resVect CODE >130:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+3A resVect CODE >132:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+3B resVect CODE >139:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+3C resVect CODE >141:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+3D resVect CODE >143:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+3E resVect CODE >144:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+3F resVect CODE >145:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+40 resVect CODE >147:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+41 resVect CODE >149:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+42 resVect CODE >150:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+43 resVect CODE >151:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+44 resVect CODE >152:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+45 resVect CODE >153:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+46 resVect CODE >155:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+47 resVect CODE >156:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+48 resVect CODE >157:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+49 resVect CODE >158:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4A resVect CODE >159:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4B resVect CODE >160:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4C resVect CODE >163:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4C resVect CODE >164:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4D resVect CODE >165:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4E resVect CODE >167:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4E resVect CODE >169:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+4F resVect CODE >171:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+50 resVect CODE >172:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+51 resVect CODE >173:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+52 resVect CODE >174:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+53 resVect CODE >175:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+54 resVect CODE >179:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+55 resVect CODE >180:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+56 resVect CODE >181:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+57 resVect CODE >182:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+58 resVect CODE >183:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+59 resVect CODE >184:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5A resVect CODE >185:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5B resVect CODE >186:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5C resVect CODE >188:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5D resVect CODE >189:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5E resVect CODE >191:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+5F resVect CODE >192:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+60 resVect CODE >193:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+61 resVect CODE >194:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+62 resVect CODE >195:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+62 resVect CODE >196:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+63 resVect CODE >197:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+63 resVect CODE >198:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+64 resVect CODE >199:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+65 resVect CODE >200:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+66 resVect CODE >204:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+66 resVect CODE >205:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+67 resVect CODE >207:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+68 resVect CODE >208:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+69 resVect CODE >209:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+69 resVect CODE >210:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6A resVect CODE >211:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6B resVect CODE >212:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6C resVect CODE >213:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6D resVect CODE >214:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6E resVect CODE >215:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+6F resVect CODE >216:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+70 resVect CODE >217:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+70 resVect CODE >218:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+71 resVect CODE >219:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+72 resVect CODE >220:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+73 resVect CODE >221:D:\proyecto 1\proyecto1-code.X\proyecto1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 74 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_shr 1 70 70 D 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
